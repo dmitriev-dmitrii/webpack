@@ -1,0 +1,47 @@
+
+@import "normalize.css";
+
+@import "css/template/header.css";
+@import "css/template/body.css";
+@import "css/template/footer.css";
+
+
+.wrap {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 3px 7px 3px dodgerblue; 
+    background: dodgerblue;
+
+	text-shadow: 0 0 3px white;
+	padding: 1rem;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+
+.input
+{
+padding: 2rem;
+	box-shadow: 0 3px 7px 3px rgba(30, 143, 255, 0.452);
+	background: white;
+	text-shadow: 0 0 3px rgb(168, 25, 25);
+	
+}
+
+.input:hover
+{
+	box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.452);
+	background: rgb(255, 0, 0);
+	text-shadow: 0 0 3px rgb(235, 8, 8);
+}
+
+img
+{
+	height: 20REM;
+	width:20rem;
+}
