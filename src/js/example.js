@@ -1,23 +1,27 @@
 
-// const target = document.querySelector('.target')
+let target = document.createElement('div');
+target.className = "target";
+target.textContent = "Target Font Size";
 
+document.body.append(target);
 
-// window.addEventListener('resize', () => {
+let fontSizeCounter = document.createElement('div');
+fontSizeCounter.className = "wrap";
 
-// 	getFontSize(target);
+document.body.append(fontSizeCounter);
 
-// });
+const getFontSize = (item)=> 
+{
+	let compStyles = window.getComputedStyle(item);
 
+	fontSizeCounter.textContent ='current Font Size :' + compStyles.getPropertyValue('font-size') ;
 
+}
 
-// const getFontSize = (item)=> 
-// {
-// 	let compStyles = window.getComputedStyle(item);
+getFontSize(target);
 
-// 	const printFontSize = document.querySelector('.print-font-size')
-// 	printFontSize.textContent = compStyles.getPropertyValue('font-size') ;
-	
-// }
+window.addEventListener('resize', () => {
 
-// getFontSize(target);
+	getFontSize(target);
 
+});

@@ -10,22 +10,18 @@
 
 <body>
 
-<!-- <%= require('html-loader!./html/template/header.html').default %> -->
+    <%= require('html-loader!./html/template/header.html').default %>
 
-<%= require('raw-loader!./html/template/header.html').default %>
+        <div class="wrap">
+<h1>test</h1>
+            <!-- <img src="<%=require('/img/2.jpg').default%>" alt="<%=require('/img/2.jpg').default%>"> -->
+            
+            <img src="<%=require('/img/2.jpg')%>" alt="<%=require('/img/2.jpg')%>">
+        </div>
 
         <div class="wrap">
 
-<img src="<%=require('/img/2.jpg').default%>" alt="ss">
-
-            <h1 class="target">
-
-                <%= htmlWebpackPlugin.options.title %>
-                
-            </h1>
-
         </div>
-
 </body>
 
 </html>

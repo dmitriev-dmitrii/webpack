@@ -9,39 +9,41 @@
 .wrap {
 
 	display: flex;
+	
 	justify-content: center;
 	align-items: center;
-	border-radius: 20px;
-	box-shadow: 0 3px 7px 3px dodgerblue; 
-    background: dodgerblue;
-
-	text-shadow: 0 0 3px white;
-	padding: 1rem;
 	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 310px;
+	border-radius: 20px;
+	box-shadow: 0 0px 7px 3px dodgerblue; 
+    background: dodgerblue;
+	text-shadow: 0 0 3px ;
+	padding: 1rem;
+    margin: 0 auto;
 
 }
 
-
-.input
-{
-padding: 2rem;
-	box-shadow: 0 3px 7px 3px rgba(30, 143, 255, 0.452);
-	background: white;
-	text-shadow: 0 0 3px rgb(168, 25, 25);
-	
-}
-
-.input:hover
-{
-	box-shadow: 0 3px 7px 3px rgba(0, 0, 0, 0.452);
-	background: rgb(255, 0, 0);
-	text-shadow: 0 0 3px rgb(235, 8, 8);
-}
-
-img
+.wrap img
 {
 	height: 20REM;
 	width:20rem;
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{
+cursor: pointer;
+opacity: 1;
+
+}
+
+
+.target
+{
+	font-size: calc(18px + 12 * ((100vw - 320px) / 1200));
+	font-weight: bold;
+	text-align: center;
+	padding: 2rem;
+	text-shadow: 0 0 .3em ;
 }

@@ -1,6 +1,2 @@
-
-
-// import "./example";
-
-
-
+import "./example";
+import "./arrayLearn";
