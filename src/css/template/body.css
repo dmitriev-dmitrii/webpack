@@ -10,4 +10,7 @@ body {
 	center / cover no-repeat url('/img/1.jpg') ;
 	color: white; 
 
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }

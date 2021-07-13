@@ -5,21 +5,20 @@
 @import "css/template/body.css";
 @import "css/template/footer.css";
 
-
 .wrap {
 
 	display: flex;
 	
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	max-width: 310px;
+
+
 	border-radius: 20px;
-	box-shadow: 0 0px 7px 3px dodgerblue; 
+	/*box-shadow: 0 0px 7px 3px dodgerblue; */
     background: dodgerblue;
 	text-shadow: 0 0 3px ;
-	padding: 1rem;
-    margin: 0 auto;
+	padding: 3rem;
+    margin: 2rem auto;
 
 }
 
@@ -29,7 +28,6 @@
 	width:20rem;
 }
 
-
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button
 {
@@ -37,7 +35,6 @@ cursor: pointer;
 opacity: 1;
 
 }
-
 
 .target
 {
