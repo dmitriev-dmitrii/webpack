@@ -1,3 +1,3 @@
 
 import "./src/js/main";
-import "./src/index.css";
+import "./src/scss/index.scss";

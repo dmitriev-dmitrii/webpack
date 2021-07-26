@@ -9,23 +9,20 @@
 </head>
 
 <body>
-   
-
+    
+<div class="contanier">
+    <label >
+        <input type="checkbox" name="theme" id="darck-theme">
+      </label>
     <%= require('raw-loader!./html/template/header.html').default %>
 
     <div class="wrap"> <h1> <%= htmlWebpackPlugin.options.title %></h1></div>
         <div class="wrap">
-            
-            <img src="<%=require('/img/1.jpg')%>" 
-            alt="<%=require('/img/1.jpg')%>">
-            <img src="<%=require('/img/2.jpg')%>" 
-            alt="<%=require('/img/2.jpg')%>">
-            <img src="<%=require('/img/3.jpg')%>" 
-            alt="<%=require('/img/3.jpg')%>">
-            <img src="<%=require('/img/b.jpg')%>" 
-            alt="<%=require('/img/b.jpg')%>">
-        </div>
 
+            <img src="<%=require('/img/1.jpg')%>" 
+            alt="gf">
+
+    </div>
 </body>
 
 </html>
