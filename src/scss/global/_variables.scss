@@ -13,20 +13,20 @@ $maxWidth: 1400;
 
 html{
 --main-text-color: black;
---minor-text-Color: #7676b3;
+--minor-text-color: #7676b3;
 
---main-accent-Color: dodgerblue;
---minor-accent-Color: dodgerblue;
+--main-accent-color: dodgerblue;
+--minor-accent-color: dodgerblue;
 
 --body-color:white;
 }
 
 html[data-theme="dark"] {
 	--main-text-color: #c9d1d9;
-	--minor-text-Color: #c9d1d9;
+	--minor-text-color: #c9d1d9;
 	
-	--main-accent-Color: dodgerblue;
-	--minor-accent-Color: dodgerblue;
+	--main-accent-color: dodgerblue;
+	--minor-accent-color: dodgerblue;
 	
 	--body-color:#0d1117;
 }
