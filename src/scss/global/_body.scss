@@ -6,19 +6,16 @@ font-size: 62.5%;
 }
 
 body {
-
+	
+@include fontSize( 1.6 , 2);
 background-color: $bodyColor;
 color: $mainTxtColor;
 min-height: 100vh;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
 
 }
 
-.contanier {
-	max-width: $maxWidth;
-	margin: 0 auto;
-	padding: 0 0.5rem;
 
-	@include fontSize( 1.6 , 2);
-
-}
 

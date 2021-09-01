@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    
+    <%= require('raw-loader!./html/template/header.html').default %>
 <div class="contanier">
     <label >
         <input type="checkbox" name="theme" id="darck-theme">
       </label>
-    <%= require('raw-loader!./html/template/header.html').default %>
+
 
     <div class="wrap"> <h1> <%= htmlWebpackPlugin.options.title %></h1></div>
         <div class="wrap">
@@ -22,7 +22,15 @@
             <img src="<%=require('/img/1.jpg')%>" 
             alt="gf">
 
+            <!-- <svg class="svg ">
+            <use xlink:href="<%=require('./img/svg/telegram.svg')%>"></use>
+            </svg> -->
+
+
+            <img src="<%=require('/img/1.jpg')%>" 
+            alt="gf">
     </div>
+    <%= require('raw-loader!./html/template/footer.html').default %>
 </body>
 
 </html>
