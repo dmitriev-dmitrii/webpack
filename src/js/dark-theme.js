@@ -32,7 +32,6 @@
 
 
 // если сайт без переключателя оставить этот код , другой удалить
-
 // (function () {
     
 //     const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

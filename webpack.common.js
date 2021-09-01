@@ -1,7 +1,7 @@
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
 
