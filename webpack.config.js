@@ -2,21 +2,20 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env) => {
-
-  const isDev = !!env.WEBPACK_SERVE
-  const isProd = !!env.WEBPACK_BUILD
-  console.log('mode: isDev ' + isDev);
-  console.log('mode: isProd ' + isProd);
+  const isProd = env.mode === 'production'
+  const isDev = !isProd
 
   return {
     entry: './index.js',
+    mode: isProd ? 'production' : 'development',
+
     devServer: {
       historyApiFallback: true,
       open: true,
       compress: true,
     },
     output: {
-      filename: '[hash].js',
+      filename: '[name].[contenthash:9].js',
       clean: true
     },
 
@@ -43,7 +42,7 @@ module.exports = (env) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: '[hash].css'
+        filename: "[name].[contenthash:9].css",
       }),
       new HtmlWebpackPlugin({
         template: "./public/index.html",
@@ -53,7 +52,12 @@ module.exports = (env) => {
         inject: true,
         scriptLoading: 'defer',
       })
-    ]
+    ],
+    optimization: {
+      concatenateModules: isProd,
+      mangleExports: isProd,
+      minimize: isProd,
+    }
   };
 
 };
