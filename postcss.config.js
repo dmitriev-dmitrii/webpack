@@ -1,7 +1,10 @@
 module.exports = {
   plugins: [
-    require("postcss-import"),
+    require("@fullhuman/postcss-purgecss")({
+      content: ['./**/*.*']
+    }),
     require('postcss-sort-media-queries'),
-    require('autoprefixer'),
+    require('postcss-flexbugs-fixes'),
+    require('autoprefixer')
   ]
 };

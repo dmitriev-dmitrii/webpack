@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
 
 module.exports = (env) => {
   const isProd = env.mode === 'production'
@@ -18,7 +19,12 @@ module.exports = (env) => {
       filename: '[name].[contenthash:9].js',
       clean: true
     },
-
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src/')
+      },
+      extensions: ["*", ".js", ".vue", ".json"],
+    },
     module: {
       rules: [
         {
@@ -29,7 +35,7 @@ module.exports = (env) => {
             "postcss-loader",
             {
               loader: "sass-loader",
-              options: { additionalData: `@import "./src/assets/scss/vars.scss";` }
+              options: { additionalData: `@import "./src/assets/scss/settings/vars.scss";` }
             }
           ],
         },
